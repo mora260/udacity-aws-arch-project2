@@ -1,0 +1,27 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Nat Gateway,Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Data Transfer,Amazon Virtual Private Cloud (VPC),0,1996.71,23960.52,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (10 TB per month), Data transfer cost (1996.71)"
+My Estimate,US East (N. Virginia),Gateway Balancer,Amazon Virtual Private Cloud (VPC),0,299.3,3591.60,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (50 GB per hour), Average number of new connections/flows (5000 per second), Average connection/flow duration (3 seconds)"
+My Estimate,US East (N. Virginia),Files and media stored,S3 Standard,0,230.28,2763.36,USD,S3 Standard storage (10000 GB per month)
+My Estimate,US East (N. Virginia),Files and media stored,S3 One Zone - Infrequent Access,0,250.2511,3003.01,USD,S3 One Zone-IA storage (25000 GB per month)
+My Estimate,US East (N. Virginia),Files and media stored,Data Transfer,0,184.23,2210.76,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (2 TB per month)"
+My Estimate,US East (N. Virginia),Master DB,Amazon Aurora MySQL-Compatible,0,1326.11,15913.32,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (N. Virginia),Read replica,Amazon Aurora MySQL-Compatible,0,1232.84,14794.08,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (0 TB)"
+My Estimate,US East (N. Virginia),Balancers,Application Load Balancer,0,74.83,897.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Balancers,Network Load Balancer,0,191.63,2299.56,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (20 GB per hour), Average number of new TCP connections (100 per second), Average TCP connection duration (5 seconds), Processed bytes per NLB for UDP (15 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (200 seconds), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (100 per second), Average TLS connection duration (3 seconds)"
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,538.942,6467.30,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t3.large), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,538.942,6467.30,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t3.large), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Global,All,Developer support plan,AWS Support,0,220.73 ,2648.76,USD,"Supports one primary contact with a Cloud Support associate during business hours, with a response time of 12 hours or less for system issues."
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+This totals to 7578.45 USD monthly.
+
+Additionaly, the estimated cost of the CloudFront distribution was calculated with https://calculator.s3.amazonaws.com/index.html, since it does not appear in the other calculator.
+
+The CloudFront monthly estimate is: 819.74 USD
+
+The final total ends up in: 8398.19 USD
+
+

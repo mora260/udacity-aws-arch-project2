@@ -1,0 +1,35 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,1996.71,23960.52,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (10 TB per month), Data transfer cost (1996.71)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,299.3,3591.60,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (50 GB per hour), Average number of new connections/flows (5000 per second), Average connection/flow duration (3 seconds)"
+My Estimate,US East (N. Virginia),Files and media stored,S3 Standard,0,115.28,1383.36,USD,S3 Standard storage (5000 GB per month)
+My Estimate,US East (N. Virginia),Files and media stored,S3 One Zone - Infrequent Access,0,300.2511,3603.01,USD,S3 One Zone-IA storage (30000 GB per month)
+My Estimate,US East (N. Virginia),Files and media stored,Data Transfer,0,184.23,2210.76,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (2 TB per month)"
+My Estimate,US East (N. Virginia),Master DB,Amazon Aurora MySQL-Compatible,0,902.71,10832.52,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (N. Virginia),Balancers,Application Load Balancer,0,74.83,897.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Balancers,Network Load Balancer,0,191.63,2299.56,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (20 GB per hour), Average number of new TCP connections (100 per second), Average TCP connection duration (5 seconds), Processed bytes per NLB for UDP (15 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (200 seconds), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (100 per second), Average TLS connection duration (3 seconds)"
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,212.868,312.886,3967.50,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 5, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t3.medium), Pricing strategy (EC2 Instance Savings Plans 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Application Servers,Amazon EC2,212.868,312.88599999999997,3967.50,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 5, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t3.medium), Pricing strategy (EC2 Instance Savings Plans 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Global,All,Developer support plan,AWS Support,12.77,155.53 First month including upfront and monthly fee 168.3,1879.13,USD,"Supports one primary contact with a Cloud Support associate during business hours, with a response time of 12 hours or less for system issues."
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+This totals to 5339.89 USD monthly.
+
+Additionaly, the estimated cost of the CloudFront distribution was calculated with https://calculator.s3.amazonaws.com/index.html, since it does not appear in the other calculator.
+
+The CloudFront monthly estimate is: 819.74 USD
+
+The final total ends up in: 6159.63 USD
+
+The most important changes made to manage the budget reduction were:
+
+1. Remove the read only replica of the Db. This replica improves data performance reducing network costs and improving workload on the master db, but it is expensive to mantain.
+   Maybe downtime will be longer in case of a disaster, since we can't promote the read replica to master, but the savings are near 1000 USD per month.
+2. Move some of the storage of standard S3 to One Zone Infrequent Access. With this change some of the old files from the social network will be moved to other tier, resulting in significant savings.
+3. The EC2 amount of instances during peaks were reduced from 8 to 5. This is a potential saving.
+4. The EC2 instances were changed from t3.large to t3.medium, and were put in a upfront plan for one year.
+   With this the monthly costs of EC2 for Web servers and Applications servers were both reduced from 538 USD to 312 USD.
+   Incurring only in a upfront fee of 425.74 USD.

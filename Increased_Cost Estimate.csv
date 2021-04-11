@@ -1,0 +1,54 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,1996.71,23960.52,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (10 TB per month), Data transfer cost (1996.71)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,299.3,3591.60,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (50 GB per hour), Average number of new connections/flows (5000 per second), Average connection/flow duration (3 seconds)"
+My Estimate,US East (N. Virginia),Files and media stored,S3 Standard,0,115.28,1383.36,USD,S3 Standard storage (5000 GB per month)
+My Estimate,US East (N. Virginia),Files and media stored,Data Transfer,0,368.55,4422.60,USD,"DT Inbound: Internet (2 TB per month), DT Outbound: Internet (4 TB per month)"
+My Estimate,US East (N. Virginia),Master DB,Amazon Aurora MySQL-Compatible,0,1326.1100000000001,15913.32,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (N. Virginia),Balancers,Application Load Balancer,0,74.83,897.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Balancers,Network Load Balancer,0,191.63,2299.56,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (20 GB per hour), Average number of new TCP connections (100 per second), Average TCP connection duration (5 seconds), Processed bytes per NLB for UDP (15 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (200 seconds), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (100 per second), Average TLS connection duration (3 seconds)"
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,707.134,8485.61,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t4g.xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,707.134,8485.61,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t4g.xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Read replica,Amazon Aurora MySQL-Compatible,0,1326.11,15913.32,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (Ohio),Read replica Region 2,Amazon Aurora MySQL-Compatible,0,1326.11,15913.32,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (Ohio),Read replica Region 2 Az 2,Amazon Aurora MySQL-Compatible,0,1326.11,15913.32,USD,"Change records per statement (0.38), Nodes (1), Instance Type (db.r5.2xlarge), Instance Family (Memory optimized), Pricing Model (OnDemand), Storage amount (3 TB), Additional backup storage (3 TB)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,1996.71,23960.52,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (10 TB per month), Data transfer cost (1996.71)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,299.3,3591.60,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (50 GB per hour), Average number of new connections/flows (5000 per second), Average connection/flow duration (3 seconds)"
+My Estimate,US East (Ohio),Balancers,Application Load Balancer,0,74.83,897.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),Balancers,Network Load Balancer,0,191.63,2299.56,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (20 GB per hour), Average number of new TCP connections (100 per second), Average TCP connection duration (5 seconds), Processed bytes per NLB for UDP (15 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (200 seconds), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (100 per second), Average TLS connection duration (3 seconds)"
+My Estimate,US East (Ohio),Application Servers,Amazon EC2,0,707.134,8485.61,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t4g.xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (Ohio),Web Servers,Amazon EC2,0,707.134,8485.61,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Outbound: Internet (2 TB per month), DT Intra-Region: (2 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 1, Peak: 8, Duration of peak: 12 Hr 0 Min)), Advance EC2 instance (t4g.xlarge), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Global,All,Enterprise support plan,AWS Support,0,1472.9 ,17674.80,USD,"Supports 24/7 phone, chat, and email access to Cloud Support Engineers for unlimited contacts, with and a response time of less than 15 minutes."
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+This totals to 16201.95 USD monthly.
+
+Additionaly, the estimated cost of the CloudFront distribution was calculated with https://calculator.s3.amazonaws.com/index.html, since it does not appear in the other calculator.
+
+The CloudFront monthly estimate is: 1349.25 USD
+
+The final total ends up in: 17521.2 USD
+
+What resources will you add and why?
+
+I'll add a second configuration in Ohio (second region), to have higher reducancy on the services.
+Now we have a multi-az, mutli-region configuration.
+This will guarantee that the application will continue to run even on a region outage in N. Virginia or Ohio (but no simultaneously).
+Also all the S3 data files were put on standard since the higher budget permits it. Lifecycles can still me implemented to save some money, but the budget increase now makes it possible to have files in quicker access times.
+
+The EC2 instances were promoted to a new instance type, to be able to manager higher workloads.
+The DB instances also were promoted to better machines and know have more memory available.
+
+Even with all the reducancy added, and the performance improvements, the bill didn't reach the 18000 USD. I will not push it, since i think it is nothing more can be improved at the time.
+
+Also the estimates were done with a constant of data trasnfer assumed for the 55000 users.
+No modification to the data transfer estimations were made for any of the architecture estimates.
+
+Maybe if the budget increase was in response of a user increase, so this numbers will need to change.
+In that case, additional estimations will be needed to guarantee that this modifications are possible and everything will still be in budget.
+
+
